@@ -8,7 +8,7 @@ on:
         - ga-ignore-
     env:
         MIRROR_URL: https://github.com/EpitechPromo2026/B-DOP-200-COT-2-1-chocolatine-mohamed.onifade.git
-        EXECUTABLES: lib/my/libmy.a
+        EXECUTABLES: 101pong
 
   workflow_dispatch:
 

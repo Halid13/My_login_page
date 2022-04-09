@@ -17,13 +17,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+     - uses: actions/checkout@v3
 
-      -name: Unwanted file detected
+     - name: Unwanted file detected
        run: |
        var=$(find . -type f \( -name "*.o" -o -name "*~" -o -name "#*" -o -name "*.a" -o -name "*.so" -o -name "*.gcda" -o -name "*.gcov" -o -name "tmp" \))
        echo $var
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+     - name: Run a multi-line script
+       run: |
+         echo Add other actions to build,
+         echo test, and deploy your project.

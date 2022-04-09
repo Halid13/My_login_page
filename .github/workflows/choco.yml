@@ -25,6 +25,6 @@ jobs:
        #echo $var
      - name: Run a multi-line script
        run: |
-       var=$(find . -type f \( -name "*.o" -o -name "*~" -o -name "#*" -o -name "*.a" -o -name "*.so" -o -name "*.gcda" -o -name "*.gcov" -o -name "tmp" \))
+         (find . -type f \( -name "*.o" -o -name "*~" -o -name "#*" -o -name "*.a" -o -name "*.so" -o -name "*.gcda" -o -name "*.gcov" -o -name "tmp" \))
          echo Add other actions to build,
          echo test, and deploy your project.

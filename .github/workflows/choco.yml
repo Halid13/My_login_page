@@ -21,7 +21,7 @@ jobs:
 
      - name: Unwanted file detected
        run: |
-       var=$(find . -type f \( -name "*.o" -o -name "*~" -o -name "#*" -o -name "*.a" -o -name "*.so" -o -name "*.gcda" -o -name "*.gcov" -o -name "tmp" \)
+       var=$(find . -type f \( -name "*.o" -o -name "*~" -o -name "#*" -o -name "*.a" -o -name "*.so" -o -name "*.gcda" -o -name "*.gcov" -o -name "tmp" \))
        echo $var:
      - name: Run a multi-line script
        run: |

@@ -19,12 +19,7 @@ jobs:
     steps:
      - uses: actions/checkout@v3
 
-     #- name: Unwanted file detected
-       #run: |
-       #var=$(find . -type f \( -name "*.o" -o -name "*~" -o -name "#*" -o -name "*.a" -o -name "*.so" -o -name "*.gcda" -o -name "*.gcov" -o -name "tmp" \))
-       #echo $var
      - name: Run a multi-line script
        run: |
          (find . -type f \( -name "*.o" -o -name "*~" -o -name "#*" -o -name "*.a" -o -name "*.so" -o -name "*.gcda" -o -name "*.gcov" -o -name "tmp" \))
-         echo Add other actions to build,
-         echo test, and deploy your project.
+         echo "::error file=${FILE#./}, tile detected::${FILE./}"; done

@@ -7,7 +7,7 @@ const APIController = (function () {
       if (accessToken) {
         return accessToken;
       }
-  
+
       const result = await fetch('https://accounts.spotify.com/api/token', {
         method: 'POST',
         headers: {

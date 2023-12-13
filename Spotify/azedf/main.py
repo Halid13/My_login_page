@@ -12,7 +12,8 @@ redirect_uri = 'http://localhost:8080/signup'
 
 def generate_random_string(length):
     # Votre implémentation de la génération d'une chaîne aléatoire de la longueur spécifiée
-    # Assurez-vous d'utiliser une méthode sécurisée pour générer des chaînes aléatoires en production
+    # A
+    # ssurez-vous d'utiliser une méthode sécurisée pour générer des chaînes aléatoires en production
     pass
 
 def spotify_login():
